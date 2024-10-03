@@ -11,9 +11,10 @@ import { SharedModule } from './shared/shared.module';
 import { GithubModule } from './github/github.module';
 import { CoreModule } from './core/core.module';
 import { AuthModule } from './auth/auth.module';
+import { DocsModule } from './docs/docs.module';
 
 const MODULES = {
-  IMPORTANT: [AdminModule, AuthModule],
+  IMPORTANT: [AdminModule, AuthModule, DocsModule],
   NO_MANDATORY: [GithubModule],
 };
 

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { AuthenticationService } from '../../../core/services/authentication.service';
 
 @Component({
@@ -6,10 +6,15 @@ import { AuthenticationService } from '../../../core/services/authentication.ser
   templateUrl: './menu-navigation.component.html',
   styleUrl: './menu-navigation.component.css'
 })
-export class MenuNavigationComponent {
+export class MenuNavigationComponent implements OnInit {
   constructor(private authService: AuthenticationService) {}
 
   isLoggedIn() {
     return this.authService.isLoggedIn();
+  }
+
+  ngOnInit(): void {
+    console.log(this.authService.isLoggedIn());
+
   }
 }

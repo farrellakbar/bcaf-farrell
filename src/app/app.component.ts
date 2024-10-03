@@ -8,11 +8,12 @@ import Swal from 'sweetalert2';
 })
 export class AppComponent implements OnInit {
   ngOnInit(): void {
-    Swal.fire({
-      title: 'Error!',
-      text: 'Do you want to continue',
-      icon: 'error',
-      confirmButtonText: 'Cool'
-    })  }
+    // Swal.fire({
+    //   title: 'Error!',
+    //   text: 'Do you want to continue',
+    //   icon: 'error',
+    //   confirmButtonText: 'Cool'
+    // })
+ }
   title = 'bcaf-farrell';
 }

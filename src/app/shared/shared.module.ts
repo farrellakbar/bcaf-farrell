@@ -5,13 +5,15 @@ import { RouterModule } from '@angular/router';
 import { provideHttpClient } from '@angular/common/http';
 import { MenuNavigationComponent } from './layouts/menu-navigation/menu-navigation.component';
 import { MenuAppComponent } from './layouts/menu-app/menu-app.component';
+import { MessageValidationComponent } from './components/message-validation/message-validation.component';
 
 
 
 @NgModule({
   declarations: [
     MenuNavigationComponent,
-    MenuAppComponent
+    MenuAppComponent,
+    MessageValidationComponent
   ],
   imports: [
     CommonModule,
@@ -25,7 +27,8 @@ import { MenuAppComponent } from './layouts/menu-app/menu-app.component';
     ReactiveFormsModule,
     RouterModule,
     MenuNavigationComponent,
-    MenuAppComponent
+    MenuAppComponent,
+    MessageValidationComponent
   ],
   providers: [provideHttpClient()],
 

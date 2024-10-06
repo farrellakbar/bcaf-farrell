@@ -1,0 +1,38 @@
+<div class="container my-5">
+  <div class="row my-4">
+    <div class="col d-flex justify-content-right">
+      <a [routerLink]="['/pic/create']" class="btn btn-primary">New Picture</a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Picture Manager</h5>
+        </div>
+        <table class="table striped">
+          <thead>
+            <tr>
+              <th>Picture</th>
+              <th>Created</th>
+              <th>Updated</th>
+              <th>Owner</th>
+            </tr>
+          </thead>
+          <tbody *ngIf="pics?.results">
+            <tr *ngFor="let p of pics.results">
+              <td>
+                <a [routerLink]="['/pic/detail', p.id]" class="text-decoration-none">
+                  <img src="{{ p.src }}" height="100px" />
+                </a>
+              </td>
+              <td>{{ p.created | date : "short" }}</td>
+              <td>{{ p.updated | date : "short" }}</td>
+              <td>{{ p.owner }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

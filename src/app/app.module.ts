@@ -12,9 +12,10 @@ import { GithubModule } from './github/github.module';
 import { CoreModule } from './core/core.module';
 import { AuthModule } from './auth/auth.module';
 import { DocsModule } from './docs/docs.module';
+import { PicsModule } from './pics/pics.module';
 
 const MODULES = {
-  IMPORTANT: [AdminModule, AuthModule, DocsModule],
+  IMPORTANT: [AdminModule, AuthModule, DocsModule, PicsModule],
   NO_MANDATORY: [GithubModule],
 };
 

@@ -4,11 +4,17 @@ import { CommonModule } from '@angular/common';
 import { DocsRoutingModule } from './docs-routing.module';
 import { DocComponent } from './pages/doc/doc.component';
 import { SharedModule } from '../shared/shared.module';
+import { DocListComponent } from './pages/doc-list/doc-list.component';
+import { DocCreateComponent } from './pages/doc-create/doc-create.component';
+import { DocDetailComponent } from './pages/doc-detail/doc-detail.component';
 
 
 @NgModule({
   declarations: [
-    DocComponent
+    DocComponent,
+    DocListComponent,
+    DocCreateComponent,
+    DocDetailComponent
   ],
   imports: [
     CommonModule,

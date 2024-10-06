@@ -28,7 +28,7 @@ const MODULES = {
     NgbModule,
     FontAwesomeModule,
     CoreModule,
-    AdminModule,
+    // AdminModule,
     // HomeModule,
     ...MODULES.IMPORTANT,
     SharedModule,
